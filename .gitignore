@@ -1,0 +1,8 @@
+venv/
+.env
+__pycache__
+*.jpg
+*.png
+*.gif
+test_backend_app
+db.sqlite3
