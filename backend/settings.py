@@ -13,7 +13,7 @@ SECRET_KEY = env('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['savageapp.azurewebsites.net']
+ALLOWED_HOSTS = ['savagebackend.azurewebsites.net']
 
 
 # Application definition
