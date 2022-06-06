@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'savagebackend'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_C050959220D0447EB3C6899D52CDE3D8 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_3246E9158A9D49BFA66FD09894FEE59D }}
