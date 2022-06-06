@@ -111,34 +111,34 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
-DEFAULT_FILE_STORAGE = 'backend.utils.custom_azure.AzureMediaStorage'
-STATICFILES_STORAGE = 'backend.utils.custom_azure.AzureStaticStorage'
+#DEFAULT_FILE_STORAGE = 'backend.utils.custom_azure.AzureMediaStorage'
+#STATICFILES_STORAGE = 'backend.utils.custom_azure.AzureStaticStorage'
 
-STATIC_LOCATION = "static"
-MEDIA_LOCATION = "data"
+#STATIC_LOCATION = "static"
+#MEDIA_LOCATION = "data"
 
-AZURE_ACCOUNT_NAME = env('AZURE_ACCOUNT_NAME')
-AZURE_ACCOUNT_KEY = env('AZURE_ACCOUNT_KEY')
-AZURE_CUSTOM_DOMAIN = f'{AZURE_ACCOUNT_NAME}.blob.core.windows.net'
-AZURE_BLOB_URL = f'https://{AZURE_CUSTOM_DOMAIN}'
+#AZURE_ACCOUNT_NAME = env('AZURE_ACCOUNT_NAME')
+#AZURE_ACCOUNT_KEY = env('AZURE_ACCOUNT_KEY')
+#AZURE_CUSTOM_DOMAIN = f'{AZURE_ACCOUNT_NAME}.blob.core.windows.net'
+#AZURE_BLOB_URL = f'https://{AZURE_CUSTOM_DOMAIN}'
 
-AZURE_OVERWRITE_FILES = True
+#AZURE_OVERWRITE_FILES = True
 
-STATIC_ROOT = f'https://{AZURE_CUSTOM_DOMAIN}/{STATIC_LOCATION}/'
-STATIC_URL = f'https://{AZURE_CUSTOM_DOMAIN}/{STATIC_LOCATION}/'
-MEDIA_URL = f'https://{AZURE_CUSTOM_DOMAIN}/{MEDIA_LOCATION}/'
+#STATIC_ROOT = f'https://{AZURE_CUSTOM_DOMAIN}/{STATIC_LOCATION}/'
+#STATIC_URL = f'https://{AZURE_CUSTOM_DOMAIN}/{STATIC_LOCATION}/'
+#MEDIA_URL = f'https://{AZURE_CUSTOM_DOMAIN}/{MEDIA_LOCATION}/'
 
-DATA_PATH = 'data'
+#DATA_PATH = 'data'
 ######
 
-#STATIC_URL = '/static/'
+STATIC_URL = '/static/'
 
-#STATICFILES_DIRS = [
-#    os.path.join(BASE_DIR, "assets")
-#]
-#STATIC_ROOT = os.path.join(BASE_DIR, "static_cdn", "static_root")
-#MEDIA_URL = '/media/'
-#MEDIA_ROOT = os.path.join(BASE_DIR, "static_cdn", "media_root")
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "assets")
+]
+STATIC_ROOT = os.path.join(BASE_DIR, "static_cdn", "static_root")
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, "static_cdn", "media_root")
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
